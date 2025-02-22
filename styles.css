@@ -258,17 +258,19 @@ input[type="checkbox"]:checked + .task-text {
 .note-toggle {
   background: transparent;
   border: none;
-  padding: 4px;
+  padding: 8px;
   color: #888;
   cursor: pointer;
   transition: all 0.2s ease;
   margin: 0;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  position: relative;
+  z-index: 1;
 }
 
 .note-toggle:hover {
@@ -277,11 +279,17 @@ input[type="checkbox"]:checked + .task-text {
 }
 
 .note-toggle svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  fill: none;
   stroke: currentColor;
-  display: block; /* Ensure the SVG is displayed */
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
+  pointer-events: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 /* Notes section styling - updated */
@@ -359,12 +367,13 @@ input[type="checkbox"]:checked + .task-text {
   }
 
   .note-toggle {
-    margin-left: 35px;
-    margin-top: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
   }
 
   .note-toggle svg {
-    width: 24px; /* Adjust size for better visibility on mobile */
+    width: 24px;
     height: 24px;
   }
 }
@@ -498,13 +507,4 @@ iframe {
 
 .pageclip-form__submit:hover {
   background-color: #252525;
-}
-
-/* Fix pen icon visibility on mobile */
-.note-toggle svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  stroke: currentColor;
-  display: block; /* Ensure the SVG is displayed */
 }
