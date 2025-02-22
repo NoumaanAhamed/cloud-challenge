@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0a0a;
+  color: #e2e2e2;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #0a0a0a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-brand a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: #e2e2e2;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: #252525;
+  color: #fff;
+}
+
+.nav-item.active {
+  color: #fff;
+  background-color: #252525;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #e2e2e2;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #e2e2e2;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(8px);
+}
+
+/* Mobile navbar styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #0a0a0a;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle.active .hamburger {
+    background-color: transparent;
+  }
+
+  .nav-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #f8fafc;
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.week {
+  background-color: #141414;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.week:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.week h2 {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 16px 24px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  transition: all 0.3s ease;
+}
+
+.week h2:hover {
+  background-color: #252525;
+}
+
+.week-content {
+  padding: 0;
+  max-height: none;
+  opacity: 1;
+  display: none;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.week-content.active {
+  padding: 20px;
+  display: block;
+  transform: translateY(0);
+}
+
+.week-content:not(.active) {
+  transform: translateY(-10px);
+}
+
+.day {
+  margin: 10px 0;
+}
+
+.day h3 {
+  color: #e2e2e2;
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task item styling */
+li {
+  background-color: #1c1c1c;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+li:hover {
+  background-color: #252525;
+}
+
+/* Improved checkbox styling */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: #404040;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Checkbox animation */
+input[type="checkbox"]:checked + .task-text {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Better text readability */
+.task-text {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Notes section styling */
+.notes-container {
+  width: 100%;
+  margin-top: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.note-toggle {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.note-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.note-toggle svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  stroke: currentColor;
+  display: block; /* Ensure the SVG is displayed */
+}
+
+/* Notes section styling - updated */
+.note-editor {
+  position: relative;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.note-editor.expanded {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 12px;
+  border: 1px solid #333;
+}
+
+.note-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #e2e2e2;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  transition: all 0.2s ease;
+}
+
+.note-textarea:focus {
+  outline: none;
+  background-color: #282828;
+}
+
+/* Remove styles for extra tips section */
+.extra {
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .week {
+    border-radius: 12px;
+  }
+
+  li {
+    padding: 12px;
+  }
+
+  .task-text {
+    width: calc(100% - 35px);
+    margin-bottom: 8px;
+  }
+
+  .note-input.expanded {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+
+  .note-toggle {
+    margin-left: 35px;
+    margin-top: 5px;
+  }
+
+  .note-toggle svg {
+    width: 24px; /* Adjust size for better visibility on mobile */
+    height: 24px;
+  }
+}
+
+/* Better touch targets for mobile */
+@media (hover: none) {
+  .week h2,
+  input[type="checkbox"],
+  .note-toggle {
+    min-height: 44px;
+    padding: 12px 15px;
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #141414;
+  color: #888;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+}
+
+.footer-info {
+  font-style: italic;
+}
+
+/* Home Section Styles */
+#home {
+  padding: 2rem;
+  text-align: left;
+}
+
+#home blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #252525;
+  background-color: #1a1a1a;
+  font-style: italic;
+  color: #ccc;
+}
+
+#home blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: right;
+}
+
+/* Embedded YouTube video styling */
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: 2rem;
+  background-color: #141414;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact h2 {
+  color: #f8fafc;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pageclip-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pageclip-form input[type="email"],
+.pageclip-form input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: #e2e2e2;
+  font-size: 1rem;
+}
+
+.pageclip-form input[type="email"]::placeholder,
+.pageclip-form input[type="text"]::placeholder {
+  color: #888;
+}
+
+.pageclip-form__submit {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #404040;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pageclip-form__submit:hover {
+  background-color: #252525;
+}
+
+/* Fix pen icon visibility on mobile */
+.note-toggle svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  stroke: currentColor;
+  display: block; /* Ensure the SVG is displayed */
+}
