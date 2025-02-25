@@ -1,617 +1,2548 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think Write Speak</title>
+    <meta
+      name="description"
+      content="A 1-month plan to improve critical thinking, writing, and speaking."
+    />
+    <meta
+      name="keywords"
+      content="Think, Write, Speak, Self-Improvement, Tracker"
+    />
+    <meta name="author" content="Mohammed Noumaan Ahamed" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Think Write Speak</title>
-  <meta name="description" content="A 1-month plan to improve critical thinking, writing, and speaking." />
-  <meta name="keywords" content="Think, Write, Speak, Self-Improvement, Tracker" />
-  <meta name="author" content="Mohammed Noumaan Ahamed" />
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 
-  <!-- Apple Touch Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <!-- Android Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
+    />
 
-  <!-- Android Icons -->
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
+    <!-- Web App Manifest (For PWAs) -->
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- Web App Manifest (For PWAs) -->
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="#">
+          <span class="thinking">Think</span>
+          <span class="writing">Write</span>
+          <span class="speaking">Speak</span>
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#feedback" class="nav-item">Feedback</a>
+      </div>
+      <button class="nav-toggle">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
 
-<body>
-  <nav class="navbar">
-    <div class="nav-brand">
-      <a href="#">Think Write Speak</a>
-    </div>
-    <div class="nav-menu">
-      <a href="#home" class="nav-item active">Home</a>
-      <a href="#contact" class="nav-item">Contact</a>
-    </div>
-    <button class="nav-toggle">
-      <span class="hamburger"></span>
-    </button>
-  </nav>
-
-  <div id="home">
-    <h1>A No bullsh*t 28 days guide to Improve Critical Thinking, Writing, and Speaking.</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/x0vUsxhMczI?si=mLOKUq79IqLor_Ib"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <blockquote>
-      “If You Can Think and Speak and Write, You Are Absolutely Deadly.”<br>
-      <cite>- Jordan Peterson</cite>
-    </blockquote>
-
-  </div>
-
-  <div id="planner">
-    <!-- Week 1 -->
-    <div class="week">
-      <h2 onclick="toggleWeek(this)">Week 1: Foundation Building</h2>
-      <div class="week-content">
-        <div class="day">
-          <h3>Day 1</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w1d1t1" /><span class="task-text">Critical Thinking (15 min): Read a short
-                article (e.g., BBC
-                News). Identify argument, evidence, biases. Write 3
-                questions.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d1t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d1t2" /><span class="task-text">Writing (20 min): Write a 200-word
-                summary of the article with
-                your take. Focus on clarity.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d1t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d1t3" /><span class="task-text">Speaking (15 min): Practice delivering
-                the summary aloud. Speak
-                slowly and clearly.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d1t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 2</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w1d2t1" /><span class="task-text">Critical Thinking (10 min): Solve a
-                logic puzzle (e.g.,
-                Braingle). Note your approach.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d2t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d2t2" /><span class="task-text">Writing (20 min): Write a 300-word
-                reflection on a personal
-                experience. Use structure.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d2t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d2t3" /><span class="task-text">Speaking (15 min): Practice a 2-min talk
-                on your reflection.
-                Use gestures.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d2t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 3</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w1d3t1" /><span class="task-text">Critical Thinking (15 min): Watch a TED
-                talk (5-10 min). Spot
-                main points and evidence.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d3t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d3t2" /><span class="task-text">Writing (20 min): Write a 250-word
-                critique of the talk’s
-                strengths/weaknesses.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d3t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d3t3" /><span class="task-text">Speaking (15 min): Record a 3-min
-                summary with critique. Vary
-                tone.</span><input type="text" class="note-input" placeholder="Add a note" data-note-id="w1d3t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 4</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w1d4t1" /><span class="task-text">Critical Thinking (10 min): Find a
-                social media post you
-                disagree with. Write a counterargument.</span><input type="text" class="note-input"
-                placeholder="Add a note" data-note-id="w1d4t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d4t2" /><span class="task-text">Writing (15 min): Write a 200-word
-                response explaining your
-                view.</span><input type="text" class="note-input" placeholder="Add a note" data-note-id="w1d4t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d4t3" /><span class="task-text">Speaking (15 min): Deliver response as a
-                2-min talk. Sound
-                confident.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d4t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 5</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w1d5t1" /><span class="task-text">Overlap (45 min): Pick an article.
-                Analyze (15 min), write a
-                250-word summary (15 min), practice a 3-min talk (15 min).</span><input type="text" class="note-input"
-                placeholder="Add a note" data-note-id="w1d5t1-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 6</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w1d6t1" /><span class="task-text">Critical Thinking (15 min): Read two
-                articles on same topic,
-                different views. Compare arguments.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d6t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d6t2" /><span class="task-text">Writing (20 min): Write 300 words on
-                which argument is
-                stronger.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d6t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w1d6t3" /><span class="task-text">Speaking (15 min): Deliver a 3-min talk
-                on your conclusion.
-                Smooth transitions.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d6t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 7: Reflection</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w1d7t1" /><span class="task-text">Reflection (20 min): Review
-                writings/talks. Note improvements.
-                Set goals for Week 2.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w1d7t1-note" />
-            </li>
-          </ul>
-        </div>
+    <div class="progress-section">
+      <div class="progress-text">Progress: 0%</div>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
       </div>
     </div>
 
-    <!-- Week 2 -->
-    <div class="week">
-      <h2 onclick="toggleWeek(this)">Week 2: Skill Deepening</h2>
-      <div class="week-content">
-        <div class="day">
-          <h3>Day 8</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w2d8t1" /><span class="task-text">Critical Thinking (10 min): Read a news
-                article. Identify key points.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d8t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d8t2" /><span class="task-text">Writing (20 min): Write a 300-word
-                opinion piece on the article.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d8t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d8t3" /><span class="task-text">Speaking (15 min): Deliver a 3-min talk
-                on your opinion.
-                Practice eye contact.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d8t3-note" />
-            </li>
-          </ul>
+    <div id="home">
+      <h1>
+        A No bullsh*t 28 days guide to Improve
+        <span class="thinking">Thinking</span>,
+        <span class="writing">Writing</span>, and
+        <span class="speaking">Speaking</span>
+      </h1>
+      <!-- short description with styles and stuff -->
+      <p class="description">
+        This is a 28-day plan to improve your critical
+        <span class="thinking">thinking</span>,
+        <span class="writing">writing</span>, and
+        <span class="speaking">speaking</span> skills . Each day, you will have
+        tasks to complete in each of these areas. The tasks are designed to
+        build on each other and help you develop these skills over time. By the
+        end of the 28 days, you should notice a significant improvement in your
+        ability to think critically, write clearly, and speak confidently.
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/x0vUsxhMczI"
+        title="YouTube video player"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <blockquote>
+        “If You Can Think and Speak and Write, You Are Absolutely Deadly.”<br />
+        <cite>- Jordan Peterson</cite>
+      </blockquote>
+    </div>
+
+    <div id="planner">
+      <div id="beginners">
+        <h2>4 Week Action Plan</h2>
+
+        <!-- Week 1 -->
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">
+            Week 1: Foundation Building
+            <span class="expand-hint">(click to see more)</span>
+          </h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 1</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d1t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Think
+                    about a topic of interest and write down 5 questions you
+                    have about it. Consider how you might find answers.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d1t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d1t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Brainstorm
+                    and select a problem or topic to write about. Write a brief
+                    statement explaining why it’s important to you.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d1t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d1t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Practice
+                    speaking aloud, focusing on clarity and pronunciation. Read
+                    a passage from a book or newspaper and record
+                    yourself.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d1t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 2</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d2t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Identify
+                    a problem that interests you and write down why it grips
+                    you. Think about initial steps to engage with it.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d2t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d2t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Find and
+                    read at least one article or chapter related to your chosen
+                    problem. Take notes on key insights.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d2t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d2t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Record
+                    yourself speaking about a topic for 5 minutes. Listen and
+                    note areas for improvement.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d2t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 3</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d3t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Imagine a
+                    conversation between two viewpoints on a topic. Write down
+                    arguments from each side.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d3t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d3t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    paragraph on any topic, then rewrite it for clarity and
+                    structure. Reflect on the process.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d3t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d3t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Practice
+                    speaking in formal and casual styles on the same topic.
+                    Record and note differences.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d3t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 4</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d4t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Reflect
+                    on a recent conversation where you might have been too
+                    confident. Think about how to approach it with
+                    humility.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d4t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d4t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word piece on a personal experience, focusing on your
+                    unique voice.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d4t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d4t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Craft an
+                    attention-grabbing opening for a 2-minute speech. Practice
+                    delivering it.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d4t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 5</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d5t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Identify
+                    a strong belief and write reasons why you might be wrong.
+                    Consider alternative perspectives.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d5t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d5t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Revise a
+                    previous piece, focusing on structure and eliminating
+                    unnecessary words.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d5t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d5t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare a
+                    short speech on a topic you feel strongly about. Record and
+                    review.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d5t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 6</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d6t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Engage in
+                    a discussion on a topic you care about. Reflect on what you
+                    learned.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d6t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d6t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Take a
+                    paragraph and rearrange sentences for better flow.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d6t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d6t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Listen to
+                    a podcast or read a book, rating its articulacy on a scale
+                    of 1-10.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d6t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 7</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d7t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Read an
+                    article or watch a video with a viewpoint opposite to yours.
+                    Write your reactions.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d7t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d7t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Summarize a
+                    longer piece or a book chapter into a ten-sentence
+                    outline.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d7t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d7t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Spend 5
+                    minutes reading, 5 minutes reading poetry aloud, and 5
+                    minutes listening to articulate speech.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d7t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="day">
-          <h3>Day 9</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w2d9t1" /><span class="task-text">Critical Thinking (10 min): Solve an
-                ethical dilemma (e.g.,
-                self-driving cars).</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d9t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d9t2" /><span class="task-text">Writing (20 min): Write a 350-word
-                reflection on your
-                conclusion.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d9t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d9t3" /><span class="task-text">Speaking (15 min): Practice a 3-min talk
-                explaining it. Use
-                storytelling.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d9t3-note" />
-            </li>
-          </ul>
+
+        <!-- Week 2 -->
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">
+            Week 2: Intermediate Skills
+            <span class="expand-hint">(click to see more)</span>
+          </h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 8</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d1t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Map out a
+                    system in your life (e.g., workplace) and analyze how its
+                    parts interact.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d1t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d1t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word argumentative paragraph with a clear claim,
+                    evidence, and reasoning.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d1t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d1t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare a
+                    3-minute speech with two audience questions. Practice
+                    delivery.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d1t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 9</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d2t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Research
+                    one cognitive bias (e.g., confirmation bias) and write how
+                    to mitigate it.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d2t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d2t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Add two
+                    pieces of evidence to your argumentative paragraph from Day
+                    8.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d2t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d2t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Craft a
+                    2-minute personal story related to a topic. Practice telling
+                    it aloud.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d2t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 10</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d3t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Use a
+                    pros and cons list for a decision you're facing. Write your
+                    thought process.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d3t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d3t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word piece on a passionate topic, focusing on your
+                    style.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d3t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d3t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Practice
+                    a short speech after a 5-minute relaxation exercise. Note
+                    the effect.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d3t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 11</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d4t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Think of
+                    three unconventional solutions to a problem. Evaluate their
+                    feasibility.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d4t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d4t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Revise a
+                    piece to remove redundant words and simplify
+                    sentences.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d4t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d4t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare a
+                    2-minute speech with deliberate pauses. Record and
+                    review.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d4t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 12</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d5t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Formulate
+                    questions on a topic and try to answer them.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d5t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d5t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word piece with transitional words to link ideas.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d5t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d5t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare
+                    two 2-minute speeches: one for a general audience, one for
+                    experts. Note differences.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d5t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 13</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d6t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Practice
+                    mindfulness by focusing on your breath or an object. Note
+                    its effect on concentration.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d6t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d6t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    short piece in an unfamiliar genre (e.g., poetry). Reflect
+                    on the experience.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d6t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d6t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Create a
+                    simple visual aid for a 3-minute speech. Practice
+                    integrating it.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d6t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 14</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d7t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Research
+                    one logical fallacy (e.g., ad hominem). Write examples and
+                    how to avoid it.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d7t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d7t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Share a
+                    piece with someone and ask for feedback on clarity,
+                    structure, and style.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d7t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d7t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Choose a
+                    random topic and deliver a 2-minute impromptu speech. Record
+                    and review.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d7t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="day">
-          <h3>Day 10</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w2d10t1" /><span class="task-text">Overlap (50 min): Watch a 10-min
-                podcast/video. Write a summary
-                (15 min), practice a talk (15 min).</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d10t1-note" />
-            </li>
-          </ul>
+
+        <!-- Week 3 -->
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">
+            Week 3: Advanced Techniques
+            <span class="expand-hint">(click to see more)</span>
+          </h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 15</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d1t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Reflect
+                    on a recent decision. Write down your thought process and
+                    evaluate its effectiveness.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d1t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d1t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    500-word essay with a clear introduction, body, and
+                    conclusion.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d1t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d1t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare a
+                    3-minute speech with two rhetorical devices (e.g.,
+                    metaphors). Record and review.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d1t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 16</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d2t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Analyze a
+                    moral dilemma and write how you would resolve it.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d2t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d2t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word persuasive piece using pathos, logos, or
+                    ethos.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d2t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d2t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>:
+                    Anticipate three difficult questions on a topic and practice
+                    answering them.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d2t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 17</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d3t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Use
+                    brainstorming or mind mapping to generate five creative
+                    solutions to a problem.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d3t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d3t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Revise a
+                    piece for style, experimenting with word choice and
+                    tone.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d3t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d3t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare a
+                    3-minute speech with a clear call to action. Practice with
+                    passion.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d3t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 18</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d4t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Consider
+                    opposing viewpoints on a topic and find a synthesis.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d4t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d4t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    short story or scene using a technique like
+                    flashbacks.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d4t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d4t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare a
+                    2-minute speech with a humorous anecdote. Practice
+                    delivery.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d4t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 19</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d5t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Research
+                    cognitive load theory and write how to apply it to your
+                    learning.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d5t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d5t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Thoroughly
+                    revise a piece, focusing on content and style.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d5t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d5t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Read a
+                    text with different pitches, tones, and paces. Record and
+                    review.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d5t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 20</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d6t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Reflect
+                    on a recent interaction, analyzing emotions and how to
+                    improve emotional intelligence.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d6t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d6t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word piece tailored to a specific audience’s needs or
+                    concerns.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d6t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d6t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Craft a
+                    3-minute story from a personal experience. Practice telling
+                    it aloud.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d6t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 21</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d7t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Imagine
+                    three scenarios (best, worst, likely) for a goal and plan
+                    responses.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d7t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d7t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word piece explaining a complex concept with a metaphor
+                    or analogy.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d7t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d7t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare
+                    answers for five potential questions on a topic. Practice
+                    aloud.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d7t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="day">
-          <h3>Day 11</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w2d11t1" /><span class="task-text">Critical Thinking (15 min): Analyze a
-                controversial piece. Spot
-                fallacies.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d11t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d11t2" /><span class="task-text">Writing (20 min): Write a 300-word
-                rebuttal.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d11t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d11t3" /><span class="task-text">Speaking (15 min): Deliver rebuttal as
-                a 3-min talk. Be
-                assertive.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d11t3-note" />
-            </li>
-          </ul>
+
+        <!-- Week 4 -->
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">
+            Week 4: Integration and Refinement
+            <span class="expand-hint">(click to see more)</span>
+          </h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 22</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d1t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Reflect
+                    on your 28-day journey. Write about what you’ve learned and
+                    how you’ve grown.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d1t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d1t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Choose a
+                    piece and prepare it for sharing (e.g., blog, social
+                    media).</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d1t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d1t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Research
+                    and list three public speaking opportunities. Plan to
+                    participate in one.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d1t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 23</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d2t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Identify
+                    a new skill or topic to learn and create a plan to
+                    start.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d2t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d2t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Share a
+                    piece and ask for detailed feedback. Revise based on
+                    comments.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d2t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d2t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Record a
+                    practice speech and analyze strengths and weaknesses.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d2t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 24</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d3t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Prepare a
+                    short lesson on a concept you’ve learned and teach it to
+                    someone.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d3t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d3t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    short piece in an unfamiliar format (e.g., script,
+                    poem).</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d3t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d3t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Think
+                    about how to mentor someone in speaking (e.g., feedback,
+                    practice).</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d3t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 25</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d4t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Write
+                    down things you’re grateful for and reflect on their
+                    impact.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d4t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d4t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    500-word reflection on your 28-day journey.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d4t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d4t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare a
+                    3-minute speech on a passionate topic. Focus on
+                    enthusiasm.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d4t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 26</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d5t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Read
+                    about a philosophical concept and write your thoughts.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d5t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d5t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    300-word essay on a philosophical question.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d5t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d5t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare
+                    arguments for both sides of a philosophical question.
+                    Practice debating.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d5t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 27</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d6t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Visualize
+                    a goal and the steps to achieve it. Write down your
+                    visualization.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d6t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d6t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    personal vision statement for the next year.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d6t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d6t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare
+                    and practice a 3-minute speech about your vision.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d6t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 28</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d7t1" /><span
+                    class="task-text"
+                    ><span class="skill-tag thinking">Thinking</span>: Reflect
+                    on how thinking, writing, and speaking are interconnected.
+                    Write about your growth.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d7t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d7t2" /><span
+                    class="task-text"
+                    ><span class="skill-tag writing">Writing</span>: Write a
+                    500-word summary of your 28-day experience.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d7t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d7t3" /><span
+                    class="task-text"
+                    ><span class="skill-tag speaking">Speaking</span>: Prepare
+                    and deliver a 5-minute speech on what you’ve learned. Record
+                    and celebrate.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d7t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="day">
-          <h3>Day 12</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w2d12t1" /><span class="task-text">Writing (25 min): Write a 400-word
-                persuasive essay on a topic
-                you care about.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d12t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d12t2" /><span class="task-text">Speaking (20 min): Deliver essay as a
-                4-min talk. Focus on
-                pacing.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d12t2-note" />
-            </li>
-          </ul>
+      </div>
+
+      <!-- </div> -->
+
+      <!-- advanced section  -->
+      <!-- <div id="advanced">
+        <h2>For Advanced Learners</h2>
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">Week 1: Entrepreneurial Thinking</h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 1: Understanding Entrepreneurial Mindset</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d1t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read article on entrepreneurial
+                    mindset (e.g.,
+                    <a
+                      href="https://mitsloan.mit.edu/ideas-made-to-matter/3-traits-entrepreneurial-mindset"
+                      >MIT Sloan</a
+                    >). Identify key traits and personal application.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d1t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d1t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word journal entry on how
+                    these traits apply to you.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d1t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d1t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Discuss insights with a partner or
+                    record a 2-min video.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d1t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 2: Identifying Business Opportunities</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d2t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read a case study (e.g.,
+                    <a href="https://www.entrepreneur.com/article/250330"
+                      >Entrepreneur</a
+                    >). Brainstorm 3 potential business ideas.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d2t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d2t2" /><span
+                    class="task-text"
+                    >Writing (15 min): List top 3 ideas with 50-word reasoning
+                    for each.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d2t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d2t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Present one idea in a 2-min pitch to a
+                    friend.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d2t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 3: Market Research and Analysis</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d3t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read a market research guide
+                    (e.g.,
+                    <a
+                      href="https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis"
+                      >SBA</a
+                    >). Define a target market for one idea.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d3t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d3t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word outline of a research
+                    plan.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d3t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d3t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Explain importance of research in a
+                    2-min talk to a colleague.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d3t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 4: Developing a Business Plan</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d4t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read a sample business plan
+                    (e.g.,
+                    <a href="https://www.bplans.com/business-plan-template/"
+                      >Bplans</a
+                    >). Draft a plan for one idea.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d4t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d4t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word executive summary and
+                    mission statement.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d4t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d4t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Present plan overview in a 3-min
+                    talk.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d4t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 5: Financial Planning for Startups</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d5t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read article on financing
+                    (e.g.,
+                    <a
+                      href="https://www.forbes.com/advisor/business/software/startups-failure-rate/"
+                      >Forbes</a
+                    >). Calculate basic costs and revenue.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d5t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d5t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word financial
+                    projection.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d5t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d5t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Discuss projection with a mock investor
+                    in 3 min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d5t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 6: Pitching Your Idea</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d6t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read pitching tips (e.g.,
+                    <a href="https://www.entrepreneur.com/article/247575"
+                      >Entrepreneur</a
+                    >). Prepare pitch structure.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d6t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d6t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 1-min pitch script (150
+                    words).</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d6t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w1d6t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Practice pitch aloud, record, and
+                    refine.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d6t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 7: Reflection</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w1d7t1" /><span
+                    class="task-text"
+                    >Reflection (45 min): Review notes and writings. Write a
+                    300-word reflection on learnings and challenges. Discuss
+                    with a peer for 5 min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w1d7t1-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="day">
-          <h3>Day 13</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w2d13t1" /><span class="task-text">Critical Thinking (15 min): Debate a
-                friend on a light
-                topic.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d13t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d13t2" /><span class="task-text">Writing (15 min): Write a 200-word
-                summary of the debate.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d13t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w2d13t3" /><span class="task-text">Speaking (15 min): Record a 2-min
-                reflection.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d13t3-note" />
-            </li>
-          </ul>
+
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">Week 2: Technology and its Impact</h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 8: Introduction to Technology Trends</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d8t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read article on tech trends
+                    (e.g.,
+                    <a
+                      href="https://techcrunch.com/2023/01/01/top-tech-trends-2023/"
+                      >TechCrunch</a
+                    >). Assess impact on your business idea.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d8t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d8t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word blog post on
+                    implications.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d8t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d8t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Discuss findings with a friend for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d8t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 9: Digital Transformation in Business</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d9t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read case study (e.g.,
+                    <a
+                      href="https://hbr.org/2020/05/the-digital-transformation-playbook"
+                      >HBR</a
+                    >). Identify tech integration opportunities.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d9t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d9t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word integration plan.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d9t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d9t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Present plan in a 3-min talk.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d9t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 10: Cybersecurity Basics for Entrepreneurs</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d10t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read cybersecurity guide (e.g.,
+                    <a
+                      href="https://www.cisco.com/c/en/us/solutions/small-business/resource-center/cybersecurity-basics.html"
+                      >Cisco</a
+                    >). Assess risks for your idea.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d10t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d10t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word draft of a cybersecurity
+                    policy.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d10t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d10t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Explain policy to a colleague in 2
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d10t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 11: Data Analysis and Decision Making</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d11t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read analytics intro (e.g.,
+                    <a
+                      href="https://www.tableau.com/learn/articles/data-analysis"
+                      >Tableau</a
+                    >). Identify key data to track.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d11t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d11t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word data collection
+                    plan.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d11t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d11t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Explain importance in a 2-min
+                    talk.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d11t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 12: Technology Ethics and Responsibility</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d12t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read ethics article (e.g.,
+                    <a
+                      href="https://www.wired.com/story/technology-ethics-2023/"
+                      >Wired</a
+                    >). Identify ethical issues in tech use.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d12t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d12t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write 200-word ethical guidelines.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d12t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d12t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Debate an issue with a partner for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d12t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 13: Automation and AI in Business</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d13t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read AI overview (e.g.,
+                    <a
+                      href="https://www.mckinsey.com/featured-insights/artificial-intelligence/ai-adoption-advances-but-foundational-barriers-remain"
+                      >McKinsey</a
+                    >). List 5 automatable tasks.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d13t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d13t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word list of
+                    opportunities.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d13t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w2d13t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Discuss AI’s role with a peer for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d13t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 14: Reflection</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w2d14t1" /><span
+                    class="task-text"
+                    >Reflection (45 min): Review notes. Write a 300-word
+                    reflection on tech learnings. Share with a peer for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w2d14t1-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="day">
-          <h3>Day 14: Reflection</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w2d14t1" /><span class="task-text">Reflection (20 min): Compare Week 2 to
-                Week 1. Set goals for
-                Week 3.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w2d14t1-note" />
-            </li>
-          </ul>
+
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">Week 3: Sales and Persuasion</h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 15: Fundamentals of Sales</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d15t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read sales principles (e.g.,
+                    <a
+                      href="https://www.salesforce.com/resources/articles/sales-process/"
+                      >Salesforce</a
+                    >). Identify your sales style.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d15t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d15t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word outline of your sales
+                    process.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d15t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d15t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Role-play a sales conversation for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d15t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 16: Persuasive Communication</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d16t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read persuasion tips (e.g.,
+                    <a
+                      href="https://www.toastmasters.org/resources/public-speaking-tips"
+                      >Toastmasters</a
+                    >). Craft 3 messages.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d16t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d16t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word persuasive email.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d16t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d16t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Deliver a 2-min persuasive speech.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d16t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 17: Customer Relationship Management</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d17t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read CRM intro (e.g.,
+                    <a href="https://www.hubspot.com/crm">HubSpot</a>). Plan
+                    relationship-building steps.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d17t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d17t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word engagement plan.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d17t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d17t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Discuss strategies with a peer for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d17t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 18: Negotiation Skills</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d18t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read negotiation guide (e.g.,
+                    <a
+                      href="https://www.pon.harvard.edu/daily/negotiation-skills-daily/top-10-negotiation-skills/"
+                      >Harvard</a
+                    >). Practice a scenario.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d18t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d18t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word reflection on your
+                    skills.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d18t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d18t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Role-play a negotiation for 5 min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d18t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 19: Marketing and Sales Alignment</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d19t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read alignment article (e.g.,
+                    <a
+                      href="https://www.forbes.com/sites/forbesbusinesscouncil/2023/02/01/the-importance-of-aligning-marketing-and-sales-teams/"
+                      >Forbes</a
+                    >). Plan support strategies.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d19t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d19t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word alignment plan.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d19t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d19t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Present plan in a 3-min talk.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d19t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 20: Handling Objections</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d20t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read objection strategies
+                    (e.g.,
+                    <a
+                      href="https://www.saleshacker.com/sales-objection-handling/"
+                      >Sales Hacker</a
+                    >). List 3 common objections and responses.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d20t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d20t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word script for handling
+                    objections.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d20t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w3d20t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Role-play handling objections for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d20t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 21: Reflection</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w3d21t1" /><span
+                    class="task-text"
+                    >Reflection (45 min): Review notes. Write a 300-word
+                    reflection on sales skills growth. Share with a peer for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w3d21t1-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <div class="week">
+          <h2 onclick="toggleWeek(this)">
+            Week 4: Psychology, Philosophy, and Human Behavior
+          </h2>
+          <div class="week-content">
+            <div class="day">
+              <h3>Day 22: Introduction to Psychology in Business</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d22t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read consumer behavior article
+                    (e.g.,
+                    <a
+                      href="https://www.psychologytoday.com/us/blog/consuming-thoughts/202301/the-psychology-consumer-behavior"
+                      >Psychology Today</a
+                    >). Identify use in business.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d22t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d22t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word blog post on
+                    insights.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d22t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d22t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Discuss with a peer for 5 min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d22t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 23: Philosophical Thinking for Decision Making</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d23t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read ethics intro (e.g.,
+                    <a
+                      href="https://plato.stanford.edu/entries/ethics-business/"
+                      >Stanford</a
+                    >). Apply to a business dilemma.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d23t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d23t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 300-word essay on your
+                    decision.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d23t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d23t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Debate the issue with a partner for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d23t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 24: Understanding Human Behavior in Teams</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d24t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read team dynamics article
+                    (e.g.,
+                    <a href="https://hbr.org/2018/11/the-neuroscience-of-trust"
+                      >HBR</a
+                    >). Plan to manage a team.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d24t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d24t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word team-building
+                    plan.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d24t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d24t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Facilitate a 5-min team
+                    discussion.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d24t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 25: Emotional Intelligence in Leadership</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d25t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read EI guide (e.g.,
+                    <a
+                      href="https://www.mindtools.com/a2x8qtk/emotional-intelligence"
+                      >MindTools</a
+                    >). Assess your EI.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d25t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d25t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word journal on EI
+                    improvement.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d25t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d25t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Discuss with a leader for 5 min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d25t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 26: Cognitive Biases and Decision Making</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d26t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read biases article (e.g.,
+                    <a
+                      href="https://www.behavioraleconomics.com/resources/introduction-to-cognitive-biases/"
+                      >Behavioral Economics</a
+                    >). Identify personal biases.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d26t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d26t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write 200-word mitigation
+                    strategies.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d26t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d26t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Present on biases in a 3-min talk.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d26t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 27: Mindfulness and Productivity</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d27t1" /><span
+                    class="task-text"
+                    >Critical Thinking (15 min): Read mindfulness intro (e.g.,
+                    <a
+                      href="https://greatergood.berkeley.edu/article/item/how_to_bring_mindfulness_to_work"
+                      >Greater Good</a
+                    >). Practice a 5-min technique.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d27t1-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d27t2" /><span
+                    class="task-text"
+                    >Writing (15 min): Write a 200-word reflection on its
+                    impact.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d27t2-note"
+                  />
+                </li>
+                <li>
+                  <input type="checkbox" data-id="w4d27t3" /><span
+                    class="task-text"
+                    >Speaking (15 min): Share experiences with a peer for 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d27t3-note"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="day">
+              <h3>Day 28: Reflection</h3>
+              <ul>
+                <li>
+                  <input type="checkbox" data-id="w4d28t1" /><span
+                    class="task-text"
+                    >Reflection (45 min): Review all notes. Write a 500-word
+                    final reflection on your journey. Present to a group in 5
+                    min.</span
+                  ><input
+                    type="text"
+                    class="note-input"
+                    placeholder="Add a note"
+                    data-note-id="w4d28t1-note"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div id="feedback">
+        <h2>Feedback</h2>
+        <form
+          action="https://send.pageclip.co/uID4CDm5TF07c6NzZXsmvM0mUH3mJwMy/contact-form"
+          class="pageclip-form"
+          method="post"
+        >
+          <input type="email" name="email" placeholder="Your email" required />
+          <input type="text" name="subject" placeholder="feedback" required />
+          <button type="submit" class="pageclip-form__submit">
+            <span>Send</span>
+          </button>
+        </form>
       </div>
     </div>
 
-    <!-- Week 3 -->
-    <div class="week">
-      <h2 onclick="toggleWeek(this)">Week 3: Integration and Application</h2>
-      <div class="week-content">
-        <div class="day">
-          <h3>Day 15</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w3d15t1" /><span class="task-text">Combined (45 min): Pick a passion
-                topic. Research (15 min),
-                write 400 words (15 min), practice a 4-min talk (15 min).</span><input type="text" class="note-input"
-                placeholder="Add a note" data-note-id="w3d15t1-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 16</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w3d16t1" /><span class="task-text">Critical Thinking (15 min): Watch a
-                speech/debate clip.
-                Identify techniques/flaws.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d16t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w3d16t2" /><span class="task-text">Writing (20 min): Write a 300-word
-                analysis of its
-                effectiveness.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d16t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w3d16t3" /><span class="task-text">Speaking (15 min): Deliver a 3-min talk
-                on your analysis.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d16t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 17</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w3d17t1" /><span class="task-text">Overlap (50 min): Read an article (10
-                min), write a 350-word
-                summary (20 min), practice a 4-min talk (20 min).</span><input type="text" class="note-input"
-                placeholder="Add a note" data-note-id="w3d17t1-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 18</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w3d18t1" /><span class="task-text">Speaking (20 min): Record a 5-min talk
-                on a researched
-                topic.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d18t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w3d18t2" /><span class="task-text">Writing (15 min): Write a 250-word
-                self-critique.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d18t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w3d18t3" /><span class="task-text">Critical Thinking (10 min): Reflect on
-                how thinking shaped your
-                talk.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d18t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 19</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w3d19t1" /><span class="task-text">Critical Thinking (15 min): Debate
-                someone on a current
-                issue.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d19t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w3d19t2" /><span class="task-text">Writing (20 min): Write a 300-word
-                summary and takeaways.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d19t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w3d19t3" /><span class="task-text">Speaking (15 min): Practice a 3-min
-                talk on your summary.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d19t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 20</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w3d20t1" /><span class="task-text">Writing (25 min): Write a 500-word
-                article on a topic of
-                choice.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d20t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w3d20t2" /><span class="task-text">Speaking (20 min): Practice key points
-                as a 5-min talk.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d20t2-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 21: Reflection</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w3d21t1" /><span class="task-text">Reflection (20 min): Review Week 3.
-                Note integration gains. Set
-                goals for Week 4.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w3d21t1-note" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Week 4 -->
-    <div class="week">
-      <h2 onclick="toggleWeek(this)">Week 4: Refinement and Assessment</h2>
-      <div class="week-content">
-        <div class="day">
-          <h3>Day 22</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w4d22t1" /><span class="task-text">Writing (20 min): Revise a Week 1 piece
-                for clarity and
-                impact.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d22t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d22t2" /><span class="task-text">Speaking (15 min): Re-record a Week 1
-                talk. Compare
-                improvements.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d22t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d22t3" /><span class="task-text">Critical Thinking (10 min): Reflect on
-                thinking gains with
-                examples.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d22t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 23</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w4d23t1" /><span class="task-text">Critical Thinking (15 min): Analyze an
-                ethical dilemma (e.g.,
-                AI in hiring).</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d23t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d23t2" /><span class="task-text">Writing (20 min): Write a 400-word
-                piece on your stance.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d23t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d23t3" /><span class="task-text">Speaking (15 min): Deliver a 4-min talk
-                on your stance.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d23t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 24</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w4d24t1" /><span class="task-text">Overlap (50 min): Pick a topic. Analyze
-                (15 min), write 400
-                words (20 min), practice a talk (15 min).</span><input type="text" class="note-input"
-                placeholder="Add a note" data-note-id="w4d24t1-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 25</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w4d25t1" /><span class="task-text">Speaking (20 min): Give a 5-min talk to
-                someone. Get
-                feedback.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d25t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d25t2" /><span class="task-text">Writing (15 min): Write a 250-word
-                reflection on
-                feedback.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d25t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d25t3" /><span class="task-text">Critical Thinking (10 min): Analyze
-                feedback vs.
-                self-assessment.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d25t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 26</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w4d26t1" /><span class="task-text">Writing (25 min): Write a 500-word
-                piece on a past struggle
-                topic.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d26t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d26t2" /><span class="task-text">Speaking (20 min): Practice a 5-min
-                talk with engagement.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d26t2-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 27</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w4d27t1" /><span class="task-text">Critical Thinking (15 min): Solve a
-                tough logic puzzle.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d27t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d27t2" /><span class="task-text">Writing (20 min): Write a 300-word
-                piece on your
-                solution.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d27t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d27t3" /><span class="task-text">Speaking (15 min): Deliver a 3-min talk
-                on your approach.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d27t3-note" />
-            </li>
-          </ul>
-        </div>
-        <div class="day">
-          <h3>Day 28: Final Assessment</h3>
-          <ul>
-            <li>
-              <input type="checkbox" data-id="w4d28t1" /><span class="task-text">Critical Thinking (15 min): Analyze a
-                complex
-                article/dilemma.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d28t1-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d28t2" /><span class="task-text">Writing (25 min): Write a 500-word
-                piece on it.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d28t2-note" />
-            </li>
-            <li>
-              <input type="checkbox" data-id="w4d28t3" /><span class="task-text">Speaking (20 min): Deliver a 5-min
-                talk. Record and
-                review.</span><input type="text" class="note-input" placeholder="Add a note"
-                data-note-id="w4d28t3-note" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div id="contact">
-      <h2>Contact Us</h2>
-      <form action="https://send.pageclip.co/uID4CDm5TF07c6NzZXsmvM0mUH3mJwMy/contact-form" class="pageclip-form"
-        method="post">
-        <input type="email" name="email" placeholder="Your email" required />
-        <input type="text" name="subject" placeholder="Subject" required />
-        <button type="submit" class="pageclip-form__submit">
-          <span>Send</span>
-        </button>
-      </form>
-    </div>
-
-    <script src="scripts.js"></script>
     <footer>
       <div class="footer-links">
         <a href="https://github.com/NoumaanAhamed" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/noumaanahamed" target="_blank">LinkedIn</a>
+        <a href="https://linkedin.com/in/noumaanahamed" target="_blank"
+          >LinkedIn</a
+        >
         <a href="https://noumaan.bearblog.dev" target="_blank">Blog</a>
       </div>
       <div class="footer-info">
@@ -621,6 +2552,6 @@
       </div>
     </footer>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-</body>
-
+    <script src="scripts.js"></script>
+  </body>
 </html>

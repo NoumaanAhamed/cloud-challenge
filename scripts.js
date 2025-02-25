@@ -106,26 +106,37 @@ function initializeNotes() {
   });
 }
 
+function updateProgress() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const totalTasks = checkboxes.length;
+  const completedTasks = Array.from(checkboxes).filter(
+    (cb) => cb.checked
+  ).length;
+  const progressPercentage = (completedTasks / totalTasks) * 100;
+
+  const progressBar = document.querySelector(".progress-bar");
+  progressBar.style.width = `${progressPercentage}%`;
+
+  const progressText = document.querySelector(".progress-text");
+  progressText.textContent = `Progress: ${Math.round(progressPercentage)}%`;
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize navbar
   initializeNavbar();
 
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-  // Load saved checkbox states
   checkboxes.forEach((checkbox) => {
     const id = checkbox.getAttribute("data-id");
     checkbox.checked = localStorage.getItem(id) === "true";
     checkbox.addEventListener("change", () => {
       localStorage.setItem(id, checkbox.checked);
+      updateProgress();
     });
   });
 
-  // Initialize notes
   initializeNotes();
 
-  // Add smooth reveal animation for weeks
   const weeks = document.querySelectorAll(".week");
   weeks.forEach((week, index) => {
     week.style.opacity = "0";
@@ -133,6 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       week.style.opacity = "1";
       week.style.transform = "translateY(0)";
-    }, index * 100); // Stagger the animations
+    }, index * 100);
   });
+
+  updateProgress();
 });

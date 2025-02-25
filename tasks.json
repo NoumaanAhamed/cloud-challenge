@@ -1,0 +1,674 @@
+[
+  {
+    "day": 1,
+    "week": 1,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Ask questions that you want answers to",
+        "description": "Choose 3 questions that genuinely interest you and journal potential answers.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Address a problem",
+        "description": "Identify a problem you want to explore through writing. Write a brief paragraph describing why this problem matters.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Articulate speech practice",
+        "description": "Record yourself speaking for 3 minutes about something you're passionate about. Listen and note areas for improvement.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "week": 1,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Orient yourself properly",
+        "description": "Practice active listening during a conversation today. Reflect on how it improved the exchange.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Read widely",
+        "description": "Find and read an article related to your chosen problem. Take notes on key insights.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Practice experimentation",
+        "description": "Record yourself explaining the same concept in three different ways. Note which feels most effective.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "week": 1,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Consider your intent",
+        "description": "Before a discussion, pause to consider your intent. Journal how this affected interactions.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Formalized thinking",
+        "description": "Take a complex thought and write it in clear, structured sentences. Revise for precision.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Capture attention",
+        "description": "Practice 3 opening lines for a topic. Record and analyze which grabs attention best.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "week": 1,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Engage with problems",
+        "description": "Choose an interesting problem. Map out its aspects using a mind map.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Integrate personality",
+        "description": "Rewrite a paragraph about your problem with your unique voice. Compare with previous work.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Free speech practice",
+        "description": "Speak extemporaneously for 3 minutes on a topic without notes. Focus on authenticity.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "week": 1,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Internalized conversation",
+        "description": "Argue both sides of an issue in your mind. Journal insights gained.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Deliberate practice",
+        "description": "Rewrite a paragraph three ways. Analyze which communicates most effectively.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Diagnose language inputs",
+        "description": "Listen to 3 speakers (podcast, video, etc.). Rate their articulacy on a 1-10 scale.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 6,
+    "week": 1,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Intellectual humility",
+        "description": "Identify three topics where you lack knowledge. Practice acknowledging these confidently.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Multiple drafts",
+        "description": "Rewrite an important sentence ten ways. Select the best version.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "3x5 language diet",
+        "description": "Spend time with 3 high-quality language sources (reading, poetry, listening).",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 7,
+    "week": 1,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Value free speech",
+        "description": "Reflect on how free speech aids learning. Write a short note on your thoughts.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Condense chapters",
+        "description": "Summarize a piece you’ve written into a 10-sentence outline.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Reduce dead phrases",
+        "description": "Record a 3-minute talk, avoiding fillers like 'um' or 'you know.' Review your progress.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 8,
+    "week": 2,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Systems thinking",
+        "description": "Map interconnections of a problem using a diagram.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Argumentative paragraph",
+        "description": "Write a paragraph with evidence supporting an argument.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Audience questions",
+        "description": "Prepare a speech anticipating 3 audience questions.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 9,
+    "week": 2,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Research cognitive biases",
+        "description": "Read about a cognitive bias and note how to mitigate it.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Add evidence",
+        "description": "Add evidence to your argumentative paragraph from Day 8.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Personal story",
+        "description": "Craft a 3-minute personal story for a speech.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "week": 2,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Pros and cons",
+        "description": "List pros and cons for a decision you’re facing.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Passionate topic",
+        "description": "Write a piece on a topic you’re passionate about.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Relaxed speech",
+        "description": "Practice a speech after a relaxation exercise.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 11,
+    "week": 2,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Unconventional solutions",
+        "description": "Brainstorm 5 unconventional solutions to a problem.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Revise for conciseness",
+        "description": "Revise a previous piece to make it more concise.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Deliberate pauses",
+        "description": "Prepare a speech with intentional pauses for effect.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "week": 2,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Formulate questions",
+        "description": "Write 5 questions on a topic and attempt answers.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Transitional words",
+        "description": "Write a piece using transitional words for flow.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Different audiences",
+        "description": "Prepare a speech for 3 different audience types.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 13,
+    "week": 2,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Mindfulness",
+        "description": "Practice mindfulness for 10 minutes, then reflect on focus.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Unfamiliar genre",
+        "description": "Write a short piece in a genre you’ve never tried.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Visual aid",
+        "description": "Create a simple visual aid for a 3-minute speech.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 14,
+    "week": 2,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Logical fallacies",
+        "description": "Read about a logical fallacy and identify it in an argument.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Share for feedback",
+        "description": "Share a piece with someone and note their feedback.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Impromptu speech",
+        "description": "Deliver a 3-minute impromptu speech on a random topic.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "week": 3,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Reflect on decisions",
+        "description": "Analyze the thought process behind a recent decision.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Structured essay",
+        "description": "Write an essay with intro, body, and conclusion.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Rhetorical devices",
+        "description": "Prepare a speech using 2 rhetorical devices.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 16,
+    "week": 3,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Moral dilemma",
+        "description": "Analyze a moral dilemma and journal your reasoning.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Persuasive piece",
+        "description": "Write a persuasive piece using ethos, pathos, logos.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Difficult questions",
+        "description": "Prepare answers for 3 tough questions on your topic.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "week": 3,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Brainstorm creatively",
+        "description": "Brainstorm 10 creative solutions to a problem.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Revise for style",
+        "description": "Revise a piece to enhance its stylistic elements.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Call to action",
+        "description": "Prepare a speech with a strong call to action.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 18,
+    "week": 3,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Opposing viewpoints",
+        "description": "Consider an opposing view on your problem. Journal insights.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Short story",
+        "description": "Write a short story with a flashback element.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Humor in speech",
+        "description": "Prepare a speech incorporating humor.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "week": 3,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Cognitive load",
+        "description": "Read about cognitive load theory and apply it to a task.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Thorough revision",
+        "description": "Revise a piece thoroughly for clarity and impact.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Pitch and tone",
+        "description": "Experiment with pitch and tone in a 3-minute speech.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "week": 3,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Emotional intelligence",
+        "description": "Reflect on how emotions influenced a recent interaction.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Specific audience",
+        "description": "Write a piece tailored to a specific audience.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Personal experience",
+        "description": "Craft a story from personal experience for a speech.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "week": 3,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Imagine scenarios",
+        "description": "Visualize 3 scenarios for achieving a goal.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Metaphors",
+        "description": "Write a piece using metaphors or analogies.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Answer questions",
+        "description": "Prepare answers for 3 potential audience questions.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 22,
+    "week": 4,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Reflect on journey",
+        "description": "Write a reflection on your 28-day skill journey.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Prepare to share",
+        "description": "Polish a piece for sharing with others.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Public speaking",
+        "description": "Research local public speaking opportunities.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 23,
+    "week": 4,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "New skill",
+        "description": "Identify a new skill to learn post-plan.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Revise with feedback",
+        "description": "Revise a piece based on feedback received.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Analyze speech",
+        "description": "Record a speech and analyze it for improvement.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "week": 4,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Teach a concept",
+        "description": "Prepare a lesson on a concept you’ve learned.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "New format",
+        "description": "Write in a format you’ve never tried (e.g., poem).",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Mentor someone",
+        "description": "Plan how to mentor someone in speaking.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 25,
+    "week": 4,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Gratitude",
+        "description": "Write about something you’re grateful for.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Journey reflection",
+        "description": "Write a reflection on your writing growth.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Passionate topic",
+        "description": "Prepare a speech on a topic you’re passionate about.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 26,
+    "week": 4,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Philosophical concept",
+        "description": "Read about a philosophical idea and reflect.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Philosophical essay",
+        "description": "Write an essay on a philosophical question.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Debate prep",
+        "description": "Prepare arguments for a debate on your topic.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 27,
+    "week": 4,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Visualize goals",
+        "description": "Visualize a goal and list steps to achieve it.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Vision statement",
+        "description": "Write a personal vision statement.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Vision speech",
+        "description": "Prepare a speech about your vision.",
+        "time": "20 min"
+      }
+    ]
+  },
+  {
+    "day": 28,
+    "week": 4,
+    "tasks": [
+      {
+        "skill": "think",
+        "title": "Skill interconnection",
+        "description": "Reflect on how thinking, writing, and speaking connect.",
+        "time": "20 min"
+      },
+      {
+        "skill": "write",
+        "title": "Summary",
+        "description": "Write a summary of your 28-day experience.",
+        "time": "20 min"
+      },
+      {
+        "skill": "speak",
+        "title": "Final speech",
+        "description": "Deliver a speech on what you’ve learned.",
+        "time": "20 min"
+      }
+    ]
+  }
+]

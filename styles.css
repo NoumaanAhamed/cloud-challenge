@@ -258,30 +258,24 @@ input[type="checkbox"]:checked + .task-text {
 .note-toggle {
   background: transparent;
   border: none;
-  padding: 4px;
+  padding: 8px;
   color: #888;
   cursor: pointer;
   transition: all 0.2s ease;
   margin: 0;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  position: relative;
+  z-index: 1;
 }
 
 .note-toggle:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
-}
-
-.note-toggle svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  stroke: currentColor;
-  display: block; /* Ensure the SVG is displayed */
 }
 
 /* Notes section styling - updated */
@@ -359,8 +353,9 @@ input[type="checkbox"]:checked + .task-text {
   }
 
   .note-toggle {
-    margin-left: 35px;
-    margin-top: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
   }
 
   .note-toggle svg {
@@ -435,6 +430,14 @@ footer a:hover {
   text-align: right;
 }
 
+#home p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
 /* Embedded YouTube video styling */
 iframe {
   display: block;
@@ -446,7 +449,7 @@ iframe {
 }
 
 /* Contact Section Styles */
-#contact {
+#feedback {
   padding: 2rem;
   background-color: #141414;
   border-radius: 12px;
@@ -457,7 +460,7 @@ iframe {
   margin-right: auto;
 }
 
-#contact h2 {
+#feedback h2 {
   color: #f8fafc;
   font-size: 24px;
   margin-bottom: 1rem;
@@ -502,9 +505,76 @@ iframe {
 
 /* Fix pen icon visibility on mobile */
 .note-toggle svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  fill: none;
   stroke: currentColor;
-  display: block; /* Ensure the SVG is displayed */
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
+  pointer-events: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Expand hint text styling */
+.expand-hint {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #666;
+  font-style: italic;
+}
+
+.progress-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #0a0a0a;
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+}
+
+.progress-text {
+  color: #e2e2e2;
+  font-size: 14px;
+}
+
+.progress-container {
+  flex-grow: 1;
+  height: 8px;
+  background-color: #252525;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+.skill-tag {
+  font-weight: 550;
+  padding-right: 3px;
+}
+
+.thinking {
+  /* background-color: rgba(72, 79, 138, 0.2); */
+  color: #99a0dd;
+  /* border-left: 2px solid #7981d7; */
+}
+
+.writing {
+  /* background-color: rgba(76, 127, 94, 0.2); */
+  color: #9ad9af;
+  /* border-left: 2px solid #7bc78f; */
+}
+
+.speaking {
+  /* background-color: rgba(138, 96, 72, 0.2); */
+  color: #e0b096;
+  /* border-left: 2px solid #d6976d; */
 }
