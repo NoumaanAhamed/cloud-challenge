@@ -1,8 +1,27 @@
-// Navbar functionality
-function initializeNavbar() {
+// Reusable function to scroll to a target with offset
+function scrollToSection(target, offsetElements) {
+  const targetElement =
+    typeof target === "string" ? document.getElementById(target) : target;
+  let totalOffset = 0;
+  offsetElements.forEach((el) => {
+    totalOffset += el.offsetHeight;
+  });
+  const targetPosition =
+    targetElement.getBoundingClientRect().top +
+    window.pageYOffset -
+    totalOffset;
+  window.scrollTo({
+    top: targetPosition,
+    behavior: "smooth",
+  });
+}
+
+// Initialize navigation, including mobile menu and scrolling
+function initializeNavigation() {
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-menu");
   const navItems = document.querySelectorAll(".nav-item");
+  const ctaButton = document.querySelector(".cta-button");
 
   // Toggle mobile menu
   navToggle.addEventListener("click", () => {
@@ -12,19 +31,36 @@ function initializeNavbar() {
 
   // Handle nav item clicks
   navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      // Remove active class from all items
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = item.getAttribute("href").substring(1);
+      const navbar = document.querySelector(".navbar");
+      const progressSection = document.querySelector(".progress-section");
+      scrollToSection(targetId, [navbar, progressSection]);
+
+      // Update active class
       navItems.forEach((i) => i.classList.remove("active"));
-      // Add active class to clicked item
       item.classList.add("active");
+
       // Close mobile menu
       navToggle.classList.remove("active");
       navMenu.classList.remove("active");
     });
   });
+
+  // Handle CTA button click
+  if (ctaButton) {
+    ctaButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = ctaButton.getAttribute("href").substring(1);
+      const navbar = document.querySelector(".navbar");
+      const progressSection = document.querySelector(".progress-section");
+      scrollToSection(targetId, [navbar, progressSection]);
+    });
+  }
 }
 
-// Toggle week content
+// Toggle week content with proper scrolling
 function toggleWeek(header) {
   const content = header.nextElementSibling;
   const isExpanding = !content.classList.contains("active");
@@ -39,9 +75,9 @@ function toggleWeek(header) {
   content.classList.toggle("active");
 
   if (isExpanding) {
-    requestAnimationFrame(() => {
-      header.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+    const navbar = document.querySelector(".navbar");
+    const progressSection = document.querySelector(".progress-section");
+    scrollToSection(header, [navbar, progressSection]);
   }
 }
 
@@ -106,6 +142,7 @@ function initializeNotes() {
   });
 }
 
+// Update progress bar
 function updateProgress() {
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   const totalTasks = checkboxes.length;
@@ -123,7 +160,7 @@ function updateProgress() {
 
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
-  initializeNavbar();
+  initializeNavigation();
 
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach((checkbox) => {

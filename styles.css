@@ -411,6 +411,8 @@ footer a:hover {
 #home {
   padding: 2rem;
   text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #home blockquote {
@@ -556,25 +558,166 @@ iframe {
   background-color: #ffffff;
   transition: width 0.3s ease;
 }
+
 .skill-tag {
   font-weight: 550;
   padding-right: 3px;
 }
 
 .thinking {
-  /* background-color: rgba(72, 79, 138, 0.2); */
   color: #99a0dd;
-  /* border-left: 2px solid #7981d7; */
 }
 
 .writing {
-  /* background-color: rgba(76, 127, 94, 0.2); */
   color: #9ad9af;
-  /* border-left: 2px solid #7bc78f; */
 }
 
 .speaking {
-  /* background-color: rgba(138, 96, 72, 0.2); */
   color: #e0b096;
-  /* border-left: 2px solid #d6976d; */
+}
+
+.cta-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #252525;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* Features Grid Styles */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature-card {
+  background-color: #141414;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.thinking-icon {
+  background-color: rgba(153, 160, 221, 0.2); /* Derived from .thinking */
+}
+
+.writing-icon {
+  background-color: rgba(154, 217, 175, 0.2); /* Derived from .writing */
+}
+
+.speaking-icon {
+  background-color: rgba(224, 176, 150, 0.2); /* Derived from .speaking */
+}
+
+.feature-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #fff; /* White for contrast */
+}
+
+.feature-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.feature-title.thinking {
+  color: #99a0dd;
+}
+
+.feature-title.writing {
+  color: #9ad9af;
+}
+
+.feature-title.speaking {
+  color: #e0b096;
+}
+
+.feature-text {
+  font-size: 1rem;
+  color: #e2e2e2;
+}
+
+/* Animation for Feature Cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.feature-card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.feature-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.feature-card:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+/* Responsive Adjustments for Features Grid */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Title Styling */
+h1 {
+  color: #ffffff; /* White for better contrast against dark background */
+  font-size: 36px; /* Larger for prominence */
+  text-align: center; /* Centered for balance */
+  margin-bottom: 20px; /* Spacing below */
+}
+
+/* Paragraph Styling */
+p {
+  color: #ffffff; /* White for readability */
+  font-size: 18px; /* Slightly larger for emphasis */
+  text-align: center; /* Centered for clean layout */
+  margin-bottom: 30px; /* Spacing below */
 }
