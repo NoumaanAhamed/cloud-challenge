@@ -706,6 +706,29 @@ iframe {
     grid-template-columns: 1fr;
   }
 }
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+  /* Progress bar visibility */
+
+  /* Paragraph text spacing */
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  /* Feature card text and layout */
+  .feature-card {
+    padding: 1.5rem;
+  }
+  .feature-text {
+    font-size: 0.9rem;
+  }
+  .features-grid {
+    gap: 1.5rem;
+  }
+}
+
 /* Title Styling */
 h1 {
   color: #ffffff; /* White for better contrast against dark background */
