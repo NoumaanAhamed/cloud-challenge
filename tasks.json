@@ -4,22 +4,28 @@
     "week": 1,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "Principle: Supply & Demand",
+        "description": "Watch a 15-min video on the fundamentals of Supply and Demand. This is the master principle.",
+        "time": "15 min"
+      },
+      {
         "skill": "think",
-        "title": "Ask questions that you want answers to",
-        "description": "Choose 3 questions that genuinely interest you and journal potential answers.",
-        "time": "20 min"
+        "title": "Find S/D 'Spark'",
+        "description": "Find one news headline where an asset (stock/crypto) moved > 5%. Ask: 'What did this news do to the *supply*? What did it do to the *demand*?'",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Address a problem",
-        "description": "Identify a problem you want to explore through writing. Write a brief paragraph describing why this problem matters.",
+        "title": "1-Paragraph Analyst Note",
+        "description": "Write one paragraph: 'Today, [Asset] moved [X%]. The news was [Spark]. This likely happened because it [increased/decreased] [supply/demand] by [explain reason].'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Articulate speech practice",
-        "description": "Record yourself speaking for 3 minutes about something you're passionate about. Listen and note areas for improvement.",
-        "time": "20 min"
+        "title": "60-Second S/D Memo",
+        "description": "Record a 1-min voice note explaining your written paragraph, as if to a friend. Use simple words like 'want' (demand) and 'available' (supply).",
+        "time": "10 min"
       }
     ]
   },
@@ -28,22 +34,28 @@
     "week": 1,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "Principle: Incentives",
+        "description": "Read a short article on 'economic incentives'. Understand that all market participants (buyers, sellers, companies) act based on incentives.",
+        "time": "15 min"
+      },
+      {
         "skill": "think",
-        "title": "Orient yourself properly",
-        "description": "Practice active listening during a conversation today. Reflect on how it improved the exchange.",
-        "time": "20 min"
+        "title": "Find 'Incentive' Spark",
+        "description": "Find a headline about a company's decision (e.g., 'Tesla cuts prices,' 'Apple announces buyback'). Ask: 'What is the *incentive* for them to do this? How does this *incentivize* customers/investors?'",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Read widely",
-        "description": "Find and read an article related to your chosen problem. Take notes on key insights.",
+        "title": "Incentive List",
+        "description": "In your journal, create two lists for your 'Spark': 1) 'Incentives for the company to do this:' 2) 'Incentives for customers/investors to react:'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Practice experimentation",
-        "description": "Record yourself explaining the same concept in three different ways. Note which feels most effective.",
-        "time": "20 min"
+        "title": "Explain the 'Why'",
+        "description": "Record a 1-min voice note. Don't state the news. Just explain the *incentives* behind it. 'Here's why [Company] did [X]... They are incentivized by...'",
+        "time": "10 min"
       }
     ]
   },
@@ -52,22 +64,28 @@
     "week": 1,
     "tasks": [
       {
-        "skill": "think",
-        "title": "Consider your intent",
-        "description": "Before a discussion, pause to consider your intent. Journal how this affected interactions.",
+        "skill": "learn",
+        "title": "Assets: Stock vs. Crypto",
+        "description": "Watch one 10-min video explaining 'What is a stock?' and another 10-min video on 'What is cryptocurrency? (e.g., Bitcoin)'. Focus on what gives them *value*.",
         "time": "20 min"
+      },
+      {
+        "skill": "think",
+        "title": "Compare S/D",
+        "description": "Think about Bitcoin vs. Apple stock. How is the *supply* of each determined? What factors drive *demand* for each? Are they different?",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Formalized thinking",
-        "description": "Take a complex thought and write it in clear, structured sentences. Revise for precision.",
-        "time": "20 min"
+        "title": "Venn Diagram / T-Chart",
+        "description": "In your journal, draw a T-chart or Venn diagram comparing the Supply/Demand factors for Bitcoin vs. a stock like Apple. Write 2-3 points for each.",
+        "time": "15 min"
       },
       {
         "skill": "speak",
-        "title": "Capture attention",
-        "description": "Practice 3 opening lines for a topic. Record and analyze which grabs attention best.",
-        "time": "20 min"
+        "title": "Explain the Difference",
+        "description": "Record a 2-min memo explaining the *key* difference in what drives value for a stock versus a cryptocurrency, based on your T-chart.",
+        "time": "10 min"
       }
     ]
   },
@@ -76,22 +94,28 @@
     "week": 1,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "Mechanics: Order Books",
+        "description": "Watch a 15-min video on 'how an exchange order book works'. Understand 'bid', 'ask', and 'market orders'. This is the *engine* of S/D.",
+        "time": "15 min"
+      },
+      {
         "skill": "think",
-        "title": "Engage with problems",
-        "description": "Choose an interesting problem. Map out its aspects using a mind map.",
-        "time": "20 min"
+        "title": "Find a 'Volume' Spark",
+        "description": "Find a headline that mentions 'high trading volume'. Ask: 'What does high volume mean in the context of an order book? Does it mean lots of buyers, sellers, or both?'",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Integrate personality",
-        "description": "Rewrite a paragraph about your problem with your unique voice. Compare with previous work.",
+        "title": "Predictive Journal Entry",
+        "description": "Find a *new* Spark. Before checking the price chart, write a prediction: 'The news is [Spark]. I believe this will [increase/decrease] [demand/supply]. Therefore, the price should [go up/down].'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Free speech practice",
-        "description": "Speak extemporaneously for 3 minutes on a topic without notes. Focus on authenticity.",
-        "time": "20 min"
+        "title": "Speak Your Prediction",
+        "description": "Record a 1-min memo *before* you check the price. State your prediction and your 'why' clearly. Save it.",
+        "time": "10 min"
       }
     ]
   },
@@ -101,21 +125,27 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Internalized conversation",
-        "description": "Argue both sides of an issue in your mind. Journal insights gained.",
-        "time": "20 min"
+        "title": "Review Prediction",
+        "description": "Listen to yesterday's memo. Now look at the chart. Were you right or wrong? *Why?* What did you miss? This feedback loop is critical.",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Deliberate practice",
-        "description": "Rewrite a paragraph three ways. Analyze which communicates most effectively.",
+        "title": "Prediction Review",
+        "description": "In your journal, under yesterday's entry, write a 'Review:' paragraph. 'My prediction was [correct/wrong]. I was right/wrong because... The key factor I missed was...'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Diagnose language inputs",
-        "description": "Listen to 3 speakers (podcast, video, etc.). Rate their articulacy on a 1-10 scale.",
-        "time": "20 min"
+        "title": "Explain Your Mistake (or Win)",
+        "description": "Record a 2-min memo. The topic is 'What I learned from my last prediction.' Be honest and analytical about your thought process.",
+        "time": "15 min"
+      },
+      {
+        "skill": "learn",
+        "title": "Passive Review",
+        "description": "Just browse financial news for 10 minutes. See if you can spot the S/D and incentive language in the articles.",
+        "time": "10 min"
       }
     ]
   },
@@ -124,22 +154,28 @@
     "week": 1,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "S/D Deep Dive: 'Elasticity'",
+        "description": "Watch a 10-min video on 'price elasticity of demand'. Ask: 'Is the demand for Bitcoin 'elastic' or 'inelastic'? What about gasoline?'",
+        "time": "15 min"
+      },
+      {
         "skill": "think",
-        "title": "Intellectual humility",
-        "description": "Identify three topics where you lack knowledge. Practice acknowledging these confidently.",
-        "time": "20 min"
+        "title": "Find 'Elasticity' Spark",
+        "description": "Find news about a price *change* for a common good (like gas, coffee, or a new phone). Ask: 'Will this price change cause a *big* drop in demand (elastic) or a *small* one (inelastic)? Why?'",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Multiple drafts",
-        "description": "Rewrite an important sentence ten ways. Select the best version.",
+        "title": "Elastic/Inelastic Note",
+        "description": "Write a short note: '[Product] prices are changing. I think the demand is [elastic/inelastic] because... This means the company's total revenue will likely [go up/go down].'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "3x5 language diet",
-        "description": "Spend time with 3 high-quality language sources (reading, poetry, listening).",
-        "time": "20 min"
+        "title": "Explain Elasticity",
+        "description": "Record a 1-min memo explaining your 'elastic' or 'inelastic' call as if to a fellow analyst.",
+        "time": "10 min"
       }
     ]
   },
@@ -149,20 +185,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Value free speech",
-        "description": "Reflect on how free speech aids learning. Write a short note on your thoughts.",
+        "title": "Weekly Review",
+        "description": "Read through your entire journal for Week 1. What was the most surprising connection you found? What are you still most confused about?",
         "time": "20 min"
       },
       {
         "skill": "write",
-        "title": "Condense chapters",
-        "description": "Summarize a piece you’ve written into a 10-sentence outline.",
+        "title": "Week 1 Summary",
+        "description": "Write a 3-bullet-point summary: 'My 3 Key Takeaways on Supply & Demand'. 2. 'My Biggest Question Remaining.'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Reduce dead phrases",
-        "description": "Record a 3-minute talk, avoiding fillers like 'um' or 'you know.' Review your progress.",
+        "title": "Weekly Summary Memo",
+        "description": "Record a 3-minute memo summarizing your 3 takeaways and your biggest question. This solidifies the week's learning.",
         "time": "20 min"
       }
     ]
@@ -172,22 +208,28 @@
     "week": 2,
     "tasks": [
       {
-        "skill": "think",
-        "title": "Systems thinking",
-        "description": "Map interconnections of a problem using a diagram.",
+        "skill": "learn",
+        "title": "Macro Principle: 'The Price of Money'",
+        "description": "Learn: **Interest Rates** (cost of borrowing), **Central Banks** (e.g., US Fed, RBI - they set the rates), **Inflation** (prices rising). Watch a 20-min explainer on how these 3 interact.",
         "time": "20 min"
+      },
+      {
+        "skill": "think",
+        "title": "Find Macro 'Spark'",
+        "description": "Find the *latest* news on an interest rate decision or inflation report (CPI) from the US or India.",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Argumentative paragraph",
-        "description": "Write a paragraph with evidence supporting an argument.",
-        "time": "20 min"
+        "title": "Start the 'Chain of Logic'",
+        "description": "In your journal, start the chain: '1. News: [e.g., Inflation is high]. 2. This means Central Bank will [raise rates]. 3. Why? [To slow spending]. 4. So what...'",
+        "time": "15 min"
       },
       {
         "skill": "speak",
-        "title": "Audience questions",
-        "description": "Prepare a speech anticipating 3 audience questions.",
-        "time": "20 min"
+        "title": "Practice the Chain",
+        "description": "Record a 1-min memo trying to speak out your 'Chain of Logic' so far. This will reveal gaps in your understanding.",
+        "time": "10 min"
       }
     ]
   },
@@ -196,22 +238,28 @@
     "week": 2,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "Macro Principle: GDP",
+        "description": "Watch a 10-min video on 'What is GDP (Gross Domestic Product)?'. Understand what it means when it's 'growing' or 'shrinking'.",
+        "time": "10 min"
+      },
+      {
         "skill": "think",
-        "title": "Research cognitive biases",
-        "description": "Read about a cognitive bias and note how to mitigate it.",
-        "time": "20 min"
+        "title": "Find GDP 'Spark'",
+        "description": "Find your country's (or the US's) latest GDP report. Was it higher or lower than expected? What does that imply about the economy's health?",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Add evidence",
-        "description": "Add evidence to your argumentative paragraph from Day 8.",
+        "title": "GDP 'So What?' Note",
+        "description": "Write a paragraph: 'The latest GDP report showed [growth/shrinkage]. This was [above/below] expectations. This suggests the economy is [hot/cold], which means the Central Bank might be [more/less] likely to [raise/lower] rates.'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Personal story",
-        "description": "Craft a 3-minute personal story for a speech.",
-        "time": "20 min"
+        "title": "Explain GDP News",
+        "description": "Record a 1-min memo explaining why the 'boring' GDP number matters, connecting it to the Central Bank and interest rates.",
+        "time": "15 min"
       }
     ]
   },
@@ -221,21 +269,21 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Pros and cons",
-        "description": "List pros and cons for a decision you’re facing.",
+        "title": "Connect Week 1 & 2",
+        "description": "The key connection: How do *interest rates* (Week 2) affect the *demand* for assets (Week 1)? Hint: If a 'safe' bank account pays 5%, are you as 'demanding' of a risky stock?",
         "time": "20 min"
       },
       {
         "skill": "write",
-        "title": "Passionate topic",
-        "description": "Write a piece on a topic you’re passionate about.",
-        "time": "20 min"
+        "title": "The 'Gravity' Note",
+        "description": "Write a paragraph explaining this connection. Title it 'Interest Rates are Gravity.' (e.g., 'Higher rates pull money *out* of risky assets... this *decreases demand* for stocks/crypto, so prices fall.')",
+        "time": "25 min"
       },
       {
         "skill": "speak",
-        "title": "Relaxed speech",
-        "description": "Practice a speech after a relaxation exercise.",
-        "time": "20 min"
+        "title": "Explain 'Gravity'",
+        "description": "Record a 2-min memo explaining the 'Rates as Gravity' analogy to a friend. This is a core concept.",
+        "time": "15 min"
       }
     ]
   },
@@ -245,20 +293,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Unconventional solutions",
-        "description": "Brainstorm 5 unconventional solutions to a problem.",
-        "time": "20 min"
+        "title": "Find New Macro Spark",
+        "description": "Find any new macro (inflation, rates, GDP) headline. This time, *predict* the market reaction for both stocks and crypto.",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Revise for conciseness",
-        "description": "Revise a previous piece to make it more concise.",
-        "time": "20 min"
+        "title": "Macro Prediction Journal",
+        "description": "Write a new prediction entry: 'Event: [Macro Spark]. My Chain: [e.g., News -> Rates -> Demand]. Prediction (Stocks): [Down]. Prediction (Crypto): [Down].'",
+        "time": "25 min"
       },
       {
         "skill": "speak",
-        "title": "Deliberate pauses",
-        "description": "Prepare a speech with intentional pauses for effect.",
+        "title": "The 'Dinner Table' Pitch",
+        "description": "Record a 2-min memo explaining your prediction. Goal: Make it a clear, compelling story. 'Here's what just happened, and here's why it means [X]...'",
         "time": "20 min"
       }
     ]
@@ -269,20 +317,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Formulate questions",
-        "description": "Write 5 questions on a topic and attempt answers.",
+        "title": "Review Prediction",
+        "description": "Check yesterday's prediction against the market. Were you right/wrong? *Why?* Did the market do the opposite? (This happens! Why?)",
         "time": "20 min"
       },
       {
         "skill": "write",
-        "title": "Transitional words",
-        "description": "Write a piece using transitional words for flow.",
+        "title": "Prediction Review",
+        "description": "Write your review: 'My prediction was [correct/wrong]. The market [did/didn't] do what I expected. I think this is because [e.g., the news was already 'priced in', or I missed...].'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Different audiences",
-        "description": "Prepare a speech for 3 different audience types.",
+        "title": "Explain 'Priced In'",
+        "description": "Record a 1-min memo on the concept of news being 'priced in' (i.e., the market already expected it, so there was no reaction).",
         "time": "20 min"
       }
     ]
@@ -292,22 +340,22 @@
     "week": 2,
     "tasks": [
       {
-        "skill": "think",
-        "title": "Mindfulness",
-        "description": "Practice mindfulness for 10 minutes, then reflect on focus.",
-        "time": "20 min"
+        "skill": "learn",
+        "title": "Podcast: 'Planet Money'",
+        "description": "Listen to one 20-30 minute episode of 'Planet Money' or 'The Indicator' podcast related to a macro topic. This is active, on-the-go learning.",
+        "time": "30 min"
       },
       {
         "skill": "write",
-        "title": "Unfamiliar genre",
-        "description": "Write a short piece in a genre you’ve never tried.",
+        "title": "Podcast Summary",
+        "description": "Write 3 bullet points summarizing the podcast episode. 1) What was the main topic? 2) What was the key insight? 3) What is one new question you have?",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Visual aid",
-        "description": "Create a simple visual aid for a 3-minute speech.",
-        "time": "20 min"
+        "title": "Podcast Insight",
+        "description": "Record a 1-min memo on the 'key insight' you just wrote down.",
+        "time": "10 min"
       }
     ]
   },
@@ -317,20 +365,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Logical fallacies",
-        "description": "Read about a logical fallacy and identify it in an argument.",
+        "title": "Weekly Review",
+        "description": "Read your Week 2 journal. What is the *clearest* connection between Macro (rates) and Markets (S/D)? What is the *muddiest*?",
         "time": "20 min"
       },
       {
         "skill": "write",
-        "title": "Share for feedback",
-        "description": "Share a piece with someone and note their feedback.",
+        "title": "Week 2 Summary",
+        "description": "Write 3 bullet points: 'My 3 Key Takeaways on Macroeconomics'. 2. 'My Biggest Question Remaining.'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Impromptu speech",
-        "description": "Deliver a 3-minute impromptu speech on a random topic.",
+        "title": "Weekly Summary Memo",
+        "description": "Record a 3-minute memo summarizing your 3 takeaways and your biggest question. This solidifies the week's learning.",
         "time": "20 min"
       }
     ]
@@ -340,22 +388,28 @@
     "week": 3,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "Psychology: 'Risk-On/Risk-Off'",
+        "description": "Learn this concept. **Risk-On:** Investors feel 'greedy' (buy stocks/crypto). **Risk-Off:** Investors feel 'fearful' (sell risk, buy 'safe' bonds/cash). Watch a 15-min video.",
+        "time": "15 min"
+      },
+      {
         "skill": "think",
-        "title": "Reflect on decisions",
-        "description": "Analyze the thought process behind a recent decision.",
-        "time": "20 min"
+        "title": "Connect Macro & Psychology",
+        "description": "How does macro news *cause* a 'Risk-Off' mood? (e.g., 'Bad inflation report -> Fed raises rates -> Fear of recession -> Risk-Off!'). Trace this.",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Structured essay",
-        "description": "Write an essay with intro, body, and conclusion.",
+        "title": "Find the 'Mood'",
+        "description": "Look at the market today (e.g., S&P 500 or Bitcoin). Is it a 'Risk-On' or 'Risk-Off' day? Find one headline and write: 'The market feels [Risk-On/Off]. I think this is driven by [News Spark].'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Rhetorical devices",
-        "description": "Prepare a speech using 2 rhetorical devices.",
-        "time": "20 min"
+        "title": "Explain the 'Mood'",
+        "description": "Record a 1-min memo: 'Today, the market sentiment is [mood], and the main driver seems to be...'",
+        "time": "10 min"
       }
     ]
   },
@@ -364,22 +418,28 @@
     "week": 3,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "Psychology: 'FOMO & FUD'",
+        "description": "Learn 'Fear Of Missing Out' (FOMO) and 'Fear, Uncertainty, Doubt' (FUD). These drive bubbles and crashes.",
+        "time": "15 min"
+      },
+      {
         "skill": "think",
-        "title": "Moral dilemma",
-        "description": "Analyze a moral dilemma and journal your reasoning.",
-        "time": "20 min"
+        "title": "Find 'Emotion' Spark",
+        "description": "Find a headline about a meme stock or a crypto coin making a *nonsensical* 50%+ move. Ask: 'Is this FOMO or FUD?'",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Persuasive piece",
-        "description": "Write a persuasive piece using ethos, pathos, logos.",
+        "title": "The 'Contrarian' Note",
+        "description": "Write a paragraph arguing *against* the crowd. 'Everyone is buying [Meme Coin] due to FOMO. This is irrational because [list 1-2 fundamental reasons]. This is likely a bubble.'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Difficult questions",
-        "description": "Prepare answers for 3 tough questions on your topic.",
-        "time": "20 min"
+        "title": "The 'Contrarian' Argument",
+        "description": "Record a 2-min memo making your contrarian case. This practices independent thinking.",
+        "time": "10 min"
       }
     ]
   },
@@ -388,22 +448,28 @@
     "week": 3,
     "tasks": [
       {
-        "skill": "think",
-        "title": "Brainstorm creatively",
-        "description": "Brainstorm 10 creative solutions to a problem.",
+        "skill": "learn",
+        "title": "Valuation: 'P/E Ratio'",
+        "description": "Learn what the 'Price-to-Earnings (P/E)' Ratio is. It's a *basic* (not perfect) check for 'cheap' vs. 'expensive'.",
         "time": "20 min"
+      },
+      {
+        "skill": "think",
+        "title": "Apply P/E",
+        "description": "Look up the P/E ratio for two competitors (e.g., Google vs. Microsoft, or Ford vs. Tesla). Which is 'cheaper'? Why might the 'expensive' one have a high P/E?",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Revise for style",
-        "description": "Revise a piece to enhance its stylistic elements.",
-        "time": "20 min"
+        "title": "P/E Comparison",
+        "description": "Write a short note: '[Company A] has a P/E of [X] and [Company B] has a P/E of [Y]. [Company B] is 'more expensive' because the market *expects* it to grow faster. This is [psychology/fundamentals].'",
+        "time": "15 min"
       },
       {
         "skill": "speak",
-        "title": "Call to action",
-        "description": "Prepare a speech with a strong call to action.",
-        "time": "20 min"
+        "title": "Explain P/E",
+        "description": "Record a 1-min memo explaining which company is 'cheaper' and *why* the other is more expensive.",
+        "time": "10 min"
       }
     ]
   },
@@ -413,20 +479,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Opposing viewpoints",
-        "description": "Consider an opposing view on your problem. Journal insights.",
-        "time": "20 min"
+        "title": "Find 'Fundamentals vs. Psych'",
+        "description": "Find news about a stock (e.g., NVIDIA, Tesla). Ask: 'Is this news impacting its *fundamentals* (long-term profit) or just its *psychology* (short-term FOMO)?'",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Short story",
-        "description": "Write a short story with a flashback element.",
-        "time": "20 min"
+        "title": "Fundamentals vs. Psych Journal",
+        "description": "Write a prediction: 'The news is [Spark]. I think this is 90% psychology / 10% fundamentals. Therefore, the price move [will/will not] last.'",
+        "time": "25 min"
       },
       {
         "skill": "speak",
-        "title": "Humor in speech",
-        "description": "Prepare a speech incorporating humor.",
+        "title": "Argue Your Case",
+        "description": "Record a 2-min memo arguing your 'psychology vs. fundamentals' call. Justify your percentage breakdown.",
         "time": "20 min"
       }
     ]
@@ -436,22 +502,28 @@
     "week": 3,
     "tasks": [
       {
-        "skill": "think",
-        "title": "Cognitive load",
-        "description": "Read about cognitive load theory and apply it to a task.",
+        "skill": "learn",
+        "title": "The 'Safe' Asset: Bonds",
+        "description": "Watch a 15-min video on 'What is a government bond?' and 'What is a 'yield'?'. This is the benchmark for 'Risk-Off'.",
         "time": "20 min"
+      },
+      {
+        "skill": "think",
+        "title": "The 'Yield' Connection",
+        "description": "Key concept: 'Why buy risky Bitcoin (0% yield) if a 'safe' government bond yields 5%?' How does the bond yield affect *demand* for crypto?",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Thorough revision",
-        "description": "Revise a piece thoroughly for clarity and impact.",
-        "time": "20 min"
+        "title": "Bonds vs. Crypto Note",
+        "description": "Write a paragraph explaining the competition: 'As bond yields [rise], they become [more] attractive. This pulls money *away* from non-yielding assets like crypto and gold, [decreasing] their demand.'",
+        "time": "15 min"
       },
       {
         "skill": "speak",
-        "title": "Pitch and tone",
-        "description": "Experiment with pitch and tone in a 3-minute speech.",
-        "time": "20 min"
+        "title": "Explain the Competition",
+        "description": "Record a 1-min memo. Start with: 'If I offered you a 5% safe return, would you still gamble...'",
+        "time": "10 min"
       }
     ]
   },
@@ -461,20 +533,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Emotional intelligence",
-        "description": "Reflect on how emotions influenced a recent interaction.",
+        "title": "Prediction Review",
+        "description": "Review all your predictions from Weeks 1-3. Where are you consistently wrong? Are you too optimistic (FOMO)? Too pessimistic (FUD)?",
         "time": "20 min"
       },
       {
         "skill": "write",
-        "title": "Specific audience",
-        "description": "Write a piece tailored to a specific audience.",
+        "title": "Identify Your 'Bias'",
+        "description": "Write a paragraph: 'My biggest bias so far seems to be... I tend to [overestimate/underestimate] the impact of [e.g., psychology, rates].'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Personal experience",
-        "description": "Craft a story from personal experience for a speech.",
+        "title": "Confess Your Bias",
+        "description": "Record a 2-min memo acknowledging your bias and stating one way you'll try to correct for it next week.",
         "time": "20 min"
       }
     ]
@@ -485,20 +557,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Imagine scenarios",
-        "description": "Visualize 3 scenarios for achieving a goal.",
+        "title": "Weekly Review",
+        "description": "Read your Week 3 journal. How does 'emotion' interact with the 'logic' of Week 1 and 2? Which one seems to win more often in the short term?",
         "time": "20 min"
       },
       {
         "skill": "write",
-        "title": "Metaphors",
-        "description": "Write a piece using metaphors or analogies.",
+        "title": "Week 3 Summary",
+        "description": "Write 3 bullet points: 'My 3 Key Takeaways on Market Psychology'. 2. 'My Biggest Question Remaining.'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Answer questions",
-        "description": "Prepare answers for 3 potential audience questions.",
+        "title": "Weekly Summary Memo",
+        "description": "Record a 3-minute memo summarizing your 3 takeaways and your biggest question. This solidifies the week's learning.",
         "time": "20 min"
       }
     ]
@@ -508,22 +580,22 @@
     "week": 4,
     "tasks": [
       {
-        "skill": "think",
-        "title": "Reflect on journey",
-        "description": "Write a reflection on your 28-day skill journey.",
+        "skill": "learn",
+        "title": "Synthesis: Geopolitics & Oil",
+        "description": "Learn how **Oil** is the 'master commodity' (it's an input cost for everything). Learn how **Geopolitics** (conflicts, alliances) affects oil *supply*.",
         "time": "20 min"
+      },
+      {
+        "skill": "think",
+        "title": "Find 'Geopolitical' Spark",
+        "description": "Find a headline about OPEC, a conflict in the Middle East, or oil prices.",
+        "time": "10 min"
       },
       {
         "skill": "write",
-        "title": "Prepare to share",
-        "description": "Polish a piece for sharing with others.",
-        "time": "20 min"
-      },
-      {
-        "skill": "speak",
-        "title": "Public speaking",
-        "description": "Research local public speaking opportunities.",
-        "time": "20 min"
+        "title": "Start the 'Full Chain' Map",
+        "description": "In your journal, trace the *entire chain*. '1. Event: [OPEC cuts supply]. 2. Impact: Oil *supply* down (Wk 1). 3. Consequence: Gas prices *up*. 4. Macro: This is *inflation* (Wk 2). 5. CB Reaction: ...'",
+        "time": "30 min"
       }
     ]
   },
@@ -533,20 +605,20 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "New skill",
-        "description": "Identify a new skill to learn post-plan.",
-        "time": "20 min"
+        "title": "Complete the 'Full Chain'",
+        "description": "Finish yesterday's chain map. Connect it all the way to Week 3. '...CB raises rates -> Fear of recession -> 'Risk-Off' mood (Wk 3) -> People sell stocks/crypto.'",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "Revise with feedback",
-        "description": "Revise a piece based on feedback received.",
-        "time": "20 min"
+        "title": "Write the 'Full Chain' Story",
+        "description": "Turn your chain map into a 2-paragraph story. 'It started with an OPEC decision, but it ended with the crypto market falling. Here's how...'",
+        "time": "25 min"
       },
       {
         "skill": "speak",
-        "title": "Analyze speech",
-        "description": "Record a speech and analyze it for improvement.",
+        "title": "Speak the 'Full Chain'",
+        "description": "Record a 2-min memo telling this story. This is the ultimate synthesis test.",
         "time": "20 min"
       }
     ]
@@ -556,22 +628,28 @@
     "week": 4,
     "tasks": [
       {
+        "skill": "learn",
+        "title": "Synthesis: Regulation & Tariffs",
+        "description": "Learn how new *laws*, *regulations*, or *tariffs* (taxes on imports) act as new *incentives* (Wk 1) for companies.",
+        "time": "15 min"
+      },
+      {
         "skill": "think",
-        "title": "Teach a concept",
-        "description": "Prepare a lesson on a concept you’ve learned.",
-        "time": "20 min"
+        "title": "Find 'Political' Spark",
+        "description": "Find a headline about a new law, a politician threatening regulation (e.g., on AI or crypto), or new tariffs.",
+        "time": "15 min"
       },
       {
         "skill": "write",
-        "title": "New format",
-        "description": "Write in a format you’ve never tried (e.g., poem).",
+        "title": "Trace the 'Incentive' Chain",
+        "description": "Write a chain: '1. Event: [New tariff on solar panels]. 2. Incentive: [More expensive to import]. 3. Company Action: [Buy domestic, or raise prices]. 4. Market Impact: [Domestic solar stocks *up*, other prices *up*].'",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Mentor someone",
-        "description": "Plan how to mentor someone in speaking.",
-        "time": "20 min"
+        "title": "Explain the Political Impact",
+        "description": "Record a 2-min memo explaining how this *political* decision will *economically* affect companies and consumers.",
+        "time": "10 min"
       }
     ]
   },
@@ -581,21 +659,21 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Gratitude",
-        "description": "Write about something you’re grateful for.",
-        "time": "20 min"
+        "title": "Find Your 'Capstone' Spark",
+        "description": "Find the *biggest* financial/political news story of the day. It doesn't matter what it is.",
+        "time": "10 min"
       },
       {
         "skill": "write",
-        "title": "Journey reflection",
-        "description": "Write a reflection on your writing growth.",
-        "time": "20 min"
+        "title": "The 'Capstone' Memo",
+        "description": "Write a 300-word memo titled 'Why [Spark] Matters.' Use *all* your principles: S/D (Wk 1), Macro (Wk 2), Psychology (Wk 3), and Political links (Wk 4). This is your 'final exam' for writing.",
+        "time": "35 min"
       },
       {
         "skill": "speak",
-        "title": "Passionate topic",
-        "description": "Prepare a speech on a topic you’re passionate about.",
-        "time": "20 min"
+        "title": "Memo Read-Through",
+        "description": "Read your Capstone Memo out loud to yourself. This helps catch awkward phrasing and flawed logic. Make edits.",
+        "time": "15 min"
       }
     ]
   },
@@ -605,21 +683,15 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Philosophical concept",
-        "description": "Read about a philosophical idea and reflect.",
-        "time": "20 min"
-      },
-      {
-        "skill": "write",
-        "title": "Philosophical essay",
-        "description": "Write an essay on a philosophical question.",
-        "time": "20 min"
+        "title": "Refine the 'Capstone'",
+        "description": "Re-read yesterday's memo. Find the *single most important sentence* (the 'thesis'). Your speaking task will be built around this.",
+        "time": "15 min"
       },
       {
         "skill": "speak",
-        "title": "Debate prep",
-        "description": "Prepare arguments for a debate on your topic.",
-        "time": "20 min"
+        "title": "The 60-Second 'CEO Briefing'",
+        "description": "This is your 'final exam' for speaking. Record a 60-second, high-energy brief of your memo. Format: 1. 'Here's what happened.' 2. 'Here's why it matters.' 3. 'Here's what I'm watching next.' Do it 5-10 times until it's *perfect*.",
+        "time": "45 min"
       }
     ]
   },
@@ -629,21 +701,21 @@
     "tasks": [
       {
         "skill": "think",
-        "title": "Visualize goals",
-        "description": "Visualize a goal and list steps to achieve it.",
-        "time": "20 min"
+        "title": "Full Journal Review",
+        "description": "Read your entire 4-week journal, from Day 1. Look at your first 'Spark' vs. your 'Capstone' memo. How has your thinking changed?",
+        "time": "30 min"
       },
       {
         "skill": "write",
-        "title": "Vision statement",
-        "description": "Write a personal vision statement.",
+        "title": "My 'Gaps & Gains' List",
+        "description": "Write two lists: 1. 'My 3 Biggest Gains' (e.g., 'I now understand rates'). 2. 'My 3 Biggest Gaps' (e.g., 'I still don't get bonds', 'My bias is...').",
         "time": "20 min"
       },
       {
         "skill": "speak",
-        "title": "Vision speech",
-        "description": "Prepare a speech about your vision.",
-        "time": "20 min"
+        "title": "Course Summary Memo",
+        "description": "Record a 3-min memo summarizing your 'Gaps & Gains'.",
+        "time": "10 min"
       }
     ]
   },
@@ -652,22 +724,22 @@
     "week": 4,
     "tasks": [
       {
-        "skill": "think",
-        "title": "Skill interconnection",
-        "description": "Reflect on how thinking, writing, and speaking connect.",
-        "time": "20 min"
-      },
-      {
         "skill": "write",
-        "title": "Summary",
-        "description": "Write a summary of your 28-day experience.",
-        "time": "20 min"
+        "title": "My Ongoing 'Analyst's Loop'",
+        "description": "The course is over; the habit begins. Write a 1-page document defining your new sustainable routine. 'I will analyze [X] Sparks per week.' 'I will journal [X] times.' 'I will review my predictions every [Sunday].'",
+        "time": "30 min"
       },
       {
         "skill": "speak",
-        "title": "Final speech",
-        "description": "Deliver a speech on what you’ve learned.",
-        "time": "20 min"
+        "title": "My 'Mission Statement'",
+        "description": "Record a 3-minute 'mission statement' for your continued learning. 'My goal is to... I will achieve this by focusing on... I will avoid...'",
+        "time": "15 min"
+      },
+      {
+        "skill": "learn",
+        "title": "Find Your Sources",
+        "description": "Final task: Find 3-5 high-quality analysts, podcasts, or newsletters to follow. Your learning is now about *curation* and *application*.",
+        "time": "15 min"
       }
     ]
   }

@@ -1,11 +1,6 @@
-This favicon was generated using the following font via favicon.io:
+This favicon was generated using the following font:
 
-- Favicon Text: TWS
-- Favicon Background: Circle
-- Font Title/Family: Inter Tight
-- Font Source: https://fonts.gstatic.com/s/intertight/v7/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mj6AiqXCRToK8EPg.ttf
-- Font Variant: Bold 700 Normal
-- Font Size: 50
-- Font Color: #FFFFFF
-- Background Color: #000
-
+- Font Title: Goldman
+- Font Author: undefined
+- Font Source: https://fonts.gstatic.com/s/goldman/v20/pe0uMIWbN4JFplR2LDJ4Bt-7G98.ttf
+- Font License: undefined)
