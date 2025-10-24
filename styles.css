@@ -513,8 +513,10 @@ iframe {
   padding: 10px 20px;
   background-color: #0a0a0a;
   position: sticky;
-  top: 60px;
+  top: 75px;
   z-index: 999;
+  border-bottom: 1px solid #1c1c1c;
+  margin-top: 0;
 }
 
 .progress-text {
